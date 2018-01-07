@@ -1,9 +1,7 @@
 #! /bin/bash
-
 # Title :rm-rf
 # Author : cExplr
 # Date : 7 Jan 2018
 # Description : THIS IS A PRANK THAT SEEMS LIKE IT IS DELETING ALL THE FILES
 # Options : Anything you want (Optional)
-
 argss="$@";echo "${argss[@]}";echo Delete Begin; for i in * ; do if [ -e $i ]; then echo "[*] Deleting $i ... ";slpTime=$(( $RANDOM % 2000  ));sleep $(( $slpTime / 500 ));echo -e "[+] $i deleted! \n"; fi ;done
